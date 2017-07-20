@@ -12,10 +12,9 @@
 */
 
 Route::get('/', function () {
-	$tasks = [
-		'Go to the store',
-		'Finish my screen cast',
-		'Clean the house'
-	];
-    return view('welcome', compact('tasks'));
+    return view('login');
+});
+
+Route::get('/login', function () {
+    return view('login');
 });
